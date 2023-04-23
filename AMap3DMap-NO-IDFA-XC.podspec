@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.summary          = 'A xcframework based AMap3DMap-NO-IDFA Support ARM64 simulator'
   
   s.description      = <<-DESC
-  This pod is built for AMap3DMap-NO-IDFA xcframework. See: https://github.com/SouHanaQiao/AMapFoundation-NO-IDFA-XC.git
+  This pod is built for AMap3DMap-NO-IDFA xcframework. See: https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-X.git
   DESC
-  s.homepage         = 'www.google.com'
+  s.homepage         = 'https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
     MIT License
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
       
       # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
       
-      platform = :ios
+      platform = :ios, '11.0'
       
       
       s.ios.deployment_target = '11.0'
