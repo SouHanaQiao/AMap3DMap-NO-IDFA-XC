@@ -2,7 +2,7 @@ zipfile = "#{__dir__}/output/AMap3DMap-NO-IDFA.zip"
 
 Pod::Spec.new do |s|
   s.name             = 'AMap3DMap-NO-IDFA-XC'
-  s.version          = '9.6.0'
+  s.version          = '9.6.1'
   s.summary          = 'A xcframework based AMap3DMap-NO-IDFA Support ARM64 simulator'
   
   s.description      = <<-DESC
