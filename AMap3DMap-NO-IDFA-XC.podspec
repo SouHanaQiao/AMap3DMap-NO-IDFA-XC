@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
       LICENSE
       }
       s.author           = { 'souahaqiao' => 'wangqinqian@126.com' }
-#      s.source           = { :path => './output/AMap3DMap-NO-IDFA.xcframework' }
+#      s.source           = { :path => './output/AMap3DMap-NO-IDFA/MAMapKit.xcframework' }
       #s.source = { :http => "file://#{zipfile}"}
      s.source = { :http => "https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC/releases/download/9.6.0/AMap3DMap-NO-IDFA.zip"}
       
