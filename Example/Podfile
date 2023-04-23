@@ -7,8 +7,11 @@ target 'Example' do
 
   # Pods for Example
   # Local only podspec will download source zip
-  pod 'AMap3DMap-NO-IDFA-XC', :path => '../'
-#  pod 'AMap3DMap-NO-IDFA-XC', :podspec => '../'
+  # 开发使用path
+#  pod 'AMap3DMap-NO-IDFA-XC', :path => '../'
+
+#测试使用 podspec
+  pod 'AMap3DMap-NO-IDFA-XC', :podspec => '../'
 
 #pod 'AMapFoundation-NO-IDFA-XC', '~> 1.0.7'
 

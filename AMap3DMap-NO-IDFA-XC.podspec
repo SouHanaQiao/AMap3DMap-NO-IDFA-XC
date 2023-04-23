@@ -2,8 +2,7 @@ zipfile = "#{__dir__}/output/AMap3DMap-NO-IDFA.zip"
 
 Pod::Spec.new do |s|
   s.name             = 'AMap3DMap-NO-IDFA-XC'
-  #s.version          = '9.6.0'
-  s.version          = '1.0.0'
+  s.version          = '9.6.0'
   s.summary          = 'A xcframework based AMap3DMap-NO-IDFA Support ARM64 simulator'
   
   s.description      = <<-DESC
@@ -38,7 +37,9 @@ Pod::Spec.new do |s|
       }
       s.author           = { 'souahaqiao' => 'wangqinqian@126.com' }
 #      s.source           = { :path => './output/AMap3DMap-NO-IDFA.xcframework' }
-      s.source = { :http => "file://#{zipfile}"}
+      #s.source = { :http => "file://#{zipfile}"}
+     s.source = { :http => "https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC/releases/download/9.6.0/AMap3DMap-NO-IDFA.zip"}
+      
       # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
       
       platform = :ios
@@ -52,11 +53,5 @@ Pod::Spec.new do |s|
       s.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'SystemConfiguration', 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'GLKit'
       s.libraries = 'c++', 'z'
       
-      # s.resource_bundles = {
-      #   'AlipaySDK-in-xcframework' => ['AlipaySDK-in-xcframework/Assets/*.png']
-      # }
-      
-      # s.public_header_files = 'Pod/Classes/**/*.h'
-      # s.frameworks = 'UIKit', 'MapKit'
       s.dependency 'AMapFoundation-NO-IDFA-XC'
     end
