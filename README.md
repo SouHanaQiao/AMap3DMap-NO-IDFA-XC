@@ -6,9 +6,9 @@ Using AMap3DMap-NO-IDFA version: 9.6.2
 
 ## Background
 The offical AMap3DMap-NO-IDFA for IOS been built for 
-- IOS
+- iOS
     - arm64
-- IOS-Simulator
+- iOS-Simulator
     - x86_64
 
 &nbsp;&nbsp;On M1 machine, the simulator run with arm64 by default, in general cases, you may exclude arm64 on simulator run to avoid compile problems. but when you want develop react native probject, there is lot of dependencies require arm64 and not easy to change.
