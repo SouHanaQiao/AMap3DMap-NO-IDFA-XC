@@ -1,13 +1,12 @@
-# AlipaySDK-in-xcframework
- A xcframework based AlipaySDK ***Support M1 simulator***
+# AMap3DMap-NO-IDFA-in-xcframework
+ A xcframework based AMap3DMap-NO-IDFA ***Support M1 simulator***
 
-Using AlipaySDK version: 15.8.11
+Using AMap3DMap-NO-IDFA version: 9.6.2
 
 
 ## Background
-The offical AlipaySDK for IOS been built for 
+The offical AMap3DMap-NO-IDFA for IOS been built for 
 - IOS
-    - armv7
     - arm64
 - IOS-Simulator
     - x86_64
