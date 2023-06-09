@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import MAMapKit
+import MAMapKit
 import AMapFoundationKit
 
 class ViewController: UIViewController {
@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         AMapServices().apiKey = "some key"
+        
+        view.addSubview(BGMapView())
     }
 
 

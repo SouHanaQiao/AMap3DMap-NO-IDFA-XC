@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4A249AC79809904BB923F82 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF6FEE4CD3FD8659F89323E /* Pods_Example.framework */; };
-		AA2F011129F3CFC5003FDDC7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2F011029F3CFC5003FDDC7 /* libz.tbd */; };
-		AA2F011329F3CFCA003FDDC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2F011229F3CFCA003FDDC7 /* SystemConfiguration.framework */; };
-		AA2F011529F3CFCF003FDDC7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2F011429F3CFCF003FDDC7 /* GLKit.framework */; };
-		AA2F011729F3CFDA003FDDC7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2F011629F3CFDA003FDDC7 /* CoreTelephony.framework */; };
-		AA2F011929F3CFE6003FDDC7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2F011829F3CFE6003FDDC7 /* libc++.tbd */; };
+		AABA95D22A3317980027B5BB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABA95D12A3317980027B5BB /* MapView.swift */; };
 		AAF1DF9929F38B5B00B6D272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF1DF9829F38B5B00B6D272 /* AppDelegate.swift */; };
 		AAF1DF9B29F38B5B00B6D272 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF1DF9A29F38B5B00B6D272 /* SceneDelegate.swift */; };
 		AAF1DF9D29F38B5B00B6D272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF1DF9C29F38B5B00B6D272 /* ViewController.swift */; };
@@ -29,6 +25,7 @@
 		AA2F011429F3CFCF003FDDC7 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		AA2F011629F3CFDA003FDDC7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		AA2F011829F3CFE6003FDDC7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AABA95D12A3317980027B5BB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AAF1DF9529F38B5B00B6D272 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF1DF9829F38B5B00B6D272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF1DF9A29F38B5B00B6D272 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,11 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2F011929F3CFE6003FDDC7 /* libc++.tbd in Frameworks */,
-				AA2F011729F3CFDA003FDDC7 /* CoreTelephony.framework in Frameworks */,
-				AA2F011529F3CFCF003FDDC7 /* GLKit.framework in Frameworks */,
-				AA2F011329F3CFCA003FDDC7 /* SystemConfiguration.framework in Frameworks */,
-				AA2F011129F3CFC5003FDDC7 /* libz.tbd in Frameworks */,
 				A4A249AC79809904BB923F82 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +78,7 @@
 				AAF1DFA129F38B5B00B6D272 /* Assets.xcassets */,
 				AAF1DFA329F38B5B00B6D272 /* LaunchScreen.storyboard */,
 				AAF1DFA629F38B5B00B6D272 /* Info.plist */,
+				AABA95D12A3317980027B5BB /* MapView.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -124,7 +117,6 @@
 				AAF1DF9129F38B5B00B6D272 /* Sources */,
 				AAF1DF9229F38B5B00B6D272 /* Frameworks */,
 				AAF1DF9329F38B5B00B6D272 /* Resources */,
-				170A6B89D8787A571143718C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,23 +174,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		170A6B89D8787A571143718C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6EC18CCEC4E5983D155018A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF1DF9D29F38B5B00B6D272 /* ViewController.swift in Sources */,
+				AABA95D22A3317980027B5BB /* MapView.swift in Sources */,
 				AAF1DF9929F38B5B00B6D272 /* AppDelegate.swift in Sources */,
 				AAF1DF9B29F38B5B00B6D272 /* SceneDelegate.swift in Sources */,
 			);
