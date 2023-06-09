@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "https://github.com/SouHanaQiao/AMapFoundation-NO-IDFA-XC", from: "1.8.2")
     ],
     targets: [
-        .binaryTarget(name: "AMap3DMap-NO-IDFA", url: "https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC/releases/download/9.6.2/AMap3DMap-NO-IDFA.zip", checksum: "0c320045c5733de5a669b3337de044960352cbf772e9a15966a3060f53d0e09a"),
+        .binaryTarget(name: "AMap3DMap-NO-IDFA", url: "https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC/releases/download/9.7.0/AMap3DMap-NO-IDFA.zip", checksum: "4177c436b23c1d5833cf1c5e8a1d2c9fe6afcfc2f9f76a08ca5ea8fe878f8c12"),
         .target(name: "AMap3DMap-NO-IDFA-XC", dependencies: [
             .product(name: "AMapFoundation-NO-IDFA-XC", package: "AMapFoundation-NO-IDFA-XC"),
             .target(name: "AMap3DMap-NO-IDFA")

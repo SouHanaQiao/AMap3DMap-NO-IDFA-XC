@@ -47,8 +47,8 @@ Pod::Spec.new do |s|
       
       s.ios.deployment_target = '11.0'
       
-      s.vendored_frameworks = ['AMap3DMap-NO-IDFA/MAMapKit.xcframework']
-      s.resource = 'AMap3DMap-NO-IDFA/AMap.bundle'
+      s.vendored_frameworks = ['MAMapKit.xcframework']
+      s.resource = 'AMap.bundle'
       
       s.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'SystemConfiguration', 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'GLKit'
       s.libraries = 'c++', 'z'
