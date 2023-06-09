@@ -1,8 +1,8 @@
-zipfile = "#{__dir__}/output/AMap3DMap-NO-IDFA.zip"
+# zipfile = "#{__dir__}/output/AMap3DMap-NO-IDFA.zip"
 
 Pod::Spec.new do |s|
   s.name             = 'AMap3DMap-NO-IDFA-XC'
-  s.version          = '9.6.2'
+  s.version          = '9.7.0'
   s.summary          = 'A xcframework based AMap3DMap-NO-IDFA Support ARM64 simulator'
   
   s.description      = <<-DESC
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
       s.author           = { 'souahaqiao' => 'wangqinqian@126.com' }
 #      s.source           = { :path => './output/AMap3DMap-NO-IDFA/MAMapKit.xcframework' }
       #s.source = { :http => "file://#{zipfile}"}
-     s.source = { :http => "https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC/releases/download/9.6.2/AMap3DMap-NO-IDFA.zip"}
+     s.source = { :http => "https://github.com/SouHanaQiao/AMap3DMap-NO-IDFA-XC/releases/download/9.7.0/AMap3DMap-NO-IDFA.zip"}
       
       # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
       
@@ -47,8 +47,8 @@ Pod::Spec.new do |s|
       
       s.ios.deployment_target = '11.0'
       
-      s.vendored_frameworks = ['output/AMap3DMap-NO-IDFA/MAMapKit.xcframework']
-      s.resource = 'output/AMap3DMap-NO-IDFA/AMap.bundle'
+      s.vendored_frameworks = ['AMap3DMap-NO-IDFA/MAMapKit.xcframework']
+      s.resource = 'AMap3DMap-NO-IDFA/AMap.bundle'
       
       s.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'SystemConfiguration', 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'GLKit'
       s.libraries = 'c++', 'z'

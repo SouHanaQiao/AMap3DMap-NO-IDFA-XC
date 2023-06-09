@@ -1,5 +1,5 @@
-# AMap3DMap-NO-IDFA (9.6.0)
-curl https://a.amap.com/lbs/static/zip/AMap_iOS_3DMap_Lib_V9.6.2.zip -o AMap3DMap-NO-IDFA.zip
+# AMap3DMap-NO-IDFA (9.7.0)
+curl https://a.amap.com/lbs/static/zip/AMap_iOS_3DMap_Lib_V9.7.0.zip -o AMap3DMap-NO-IDFA.zip
 unzip AMap3DMap-NO-IDFA.zip -d AMap3DMap-NO-IDFA
 
 xcframeworkName="MAMapKit"

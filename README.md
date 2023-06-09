@@ -1,7 +1,7 @@
 # AMap3DMap-NO-IDFA-in-xcframework
  A xcframework based AMap3DMap-NO-IDFA ***Support M1 simulator***
 
-Using AMap3DMap-NO-IDFA version: 9.6.2
+Using AMap3DMap-NO-IDFA version: 9.7.0
 
 
 ## Background
