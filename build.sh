@@ -41,7 +41,7 @@ function process {
 #    zip -r $OUTPUT_PATH.zip $OUTPUT_PATH
     cd $OUTPUT_PATH
     zip -r $L_PATH.zip $xcframeworkName.xcframework
-    zip -g $L_PATH.zip AMap.bundle/*
+    zip -rg $L_PATH.zip AMap.bundle/*
     mv $L_PATH.zip ../$L_PATH.zip
     cd ../../
 }
